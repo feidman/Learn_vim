@@ -6,6 +6,7 @@ sudo apt-get install vim //ubuntu
 # vimtutor
 ```
 vimtutor
+manual \usr\share\vim\vim74
 ```
 # Moving the cursor
 ## Moving the cursor
@@ -44,6 +45,16 @@ zz: place the current line to the middle of curent view.
 zb: place the current line to the bottome of current view.
 Ctrl+e: roll one line.
 ```
+## advanced moving
+fx: searches farward in the line for the single char x and moving to it
+Fx: searches backward in the line for the char x and moving to it
+tx: works as fx but moving to the char before the searched one
+Tn: backward version of tx
+; can repeat the four commands and . will repeat in other direction
+
+3G: go to line 3
+%20: go to the line of 20% position of the file
+CTRL+G: the bottom line will show where you are and other info of the file
 
 # Exit vim
 ```
@@ -92,6 +103,12 @@ dd: cut the whole line
 %: find the matched brace,[,{,(
 n: keep looking
 N: keep looking reversing
+*: positioning the cursor on the word at its next appearance 
+#: works as the * cmd except it do reversely
+\< and \>: searches the whole word
+:hlsearch
+:nohlsearch
+moving with marks......
 ```
 
 # Replace
