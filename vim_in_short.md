@@ -6,7 +6,7 @@ sudo apt-get install vim //ubuntu
 # vimtutor
 ```
 vimtutor
-manual \usr\share\vim\vim74
+manual \usr\share\vim\vim74\doc\usr_01.txt
 ```
 # Moving the cursor
 ## Moving the cursor
@@ -55,6 +55,32 @@ Tn: backward version of tx
 3G: go to line 3
 %20: go to the line of 20% position of the file
 CTRL+G: the bottom line will show where you are and other info of the file
+
+# operator + motion
+dw: delete one word
+d2w: delete two words
+cw: change a word (delete a word and leaves at insert mode)
+c2w: change 2 word
+dd: delete a whole line
+cc: change a whole line
+d$: delete to the end of the line
+c$: change to the end of the line
+
+shortcuts for most popular "operator + motion"
+
+	x stands for dl
+	X stands for dh
+	D stands for d$
+	C stands for c$
+	s stands for cl
+	S stands for cc
+
+# split window
+
++++
+:split: split current window and display current file
+:split path/filename: split window and open new file
++++
 
 # Exit vim
 ```
