@@ -6,9 +6,13 @@ sudo apt-get install vim //ubuntu
 # vimtutor
 ```
 vimtutor
+
 manual \usr\share\vim\vim74\doc\usr_01.txt
+*This file is base don this.* 
+
+Reference on topics, such as move, insert and motion etc.
 ```
-# Moving the cursor
+# Moving the cursor(usr_03.txt Moving around)
 ## Moving the cursor
 ``` 
 h,j,k,l: move to Left, down, up and right one char.
@@ -46,6 +50,7 @@ zb: place the current line to the bottome of current view.
 Ctrl+e: roll one line.
 ```
 ## advanced moving
+```
 fx: searches farward in the line for the single char x and moving to it
 Fx: searches backward in the line for the char x and moving to it
 tx: works as fx but moving to the char before the searched one
@@ -55,8 +60,10 @@ Tn: backward version of tx
 3G: go to line 3
 %20: go to the line of 20% position of the file
 CTRL+G: the bottom line will show where you are and other info of the file
+```
 
 # operator + motion
+```
 dw: delete one word
 d2w: delete two words
 cw: change a word (delete a word and leaves at insert mode)
@@ -74,6 +81,7 @@ shortcuts for most popular "operator + motion"
 	C stands for c$
 	s stands for cl
 	S stands for cc
+```
 
 # split window
 
@@ -107,7 +115,7 @@ o: insert a blank line after this line
 O: insert a blank line before this line
 ```
 
-#Undo
+# Undo
 ```
 u: undo
 CTRL + r: redo
@@ -130,7 +138,7 @@ dd: cut the whole line
 n: keep looking
 N: keep looking reversing
 *: positioning the cursor on the word at its next appearance 
-#: works as the * cmd except it do reversely
+'#': works as the * cmd except it do reversely
 \< and \>: searches the whole word
 :hlsearch
 :nohlsearch
@@ -167,5 +175,5 @@ colorscheme pablo (colorscheme are stored in the dir of /usr/share/vim/vim74/col
 Plug 'suan/vim-instant-markdown'
 let g:instant_markdown_slow = 1
 let g:instant_markdown_autostart = 0
-#: InstantMarkdownPreview
+'#': InstantMarkdownPreview
 ```
