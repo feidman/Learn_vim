@@ -87,6 +87,8 @@ shortcuts for most popular "operator + motion"
 ## repeat change
 ```
 . :will repeat last change you've made
+
+Examples:
    <B>:	    df>: delete untial > was found
 	    move to next <
 	    and . to repeat delete operation
