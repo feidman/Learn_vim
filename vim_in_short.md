@@ -61,8 +61,8 @@ Tn: backward version of tx
 %20: go to the line of 20% position of the file
 CTRL+G: the bottom line will show where you are and other info of the file
 ```
-
-# operator + motion
+# making chages
+## operator + motion
 ```
 dw: delete one word
 d2w: delete two words
@@ -73,6 +73,8 @@ cc: change a whole line
 d$: delete to the end of the line
 c$: change to the end of the line
 
+dfx: delete untill 'x' was found (included)
+
 shortcuts for most popular "operator + motion"
 
 	x stands for dl
@@ -82,13 +84,67 @@ shortcuts for most popular "operator + motion"
 	s stands for cl
 	S stands for cc
 ```
+## repeat change
+```
+. :will repeat last change you've made
+   <B>:	    df>: delete untial > was found
+	    move to next <
+	    and . to repeat delete operation
+   <B>
+   /four:   find word four
+   cwfive:  change four to five
+   n:	    repeat find operation
+   .:	    repeat change operation
+   n:	    repeat find operation
+   .:	    repeat chage operation
+
+
+
+```
+## Visual mode
+```
+v: visual mode and char selected
+V: visual mode with line seleted
+CTRL+v: visual mode with block slected
+o: move to the other end of selection
+O: move to the outher end of selected block
+```
+
+## Copy and p(vim for put)
+```
+y: copy(vim for Yank). It is a operator and can be used with motion appended.
+p: put
+yy: copy the whole line
+dd: cut the whole line
+y$: copy to the end of this line
+y2w: copy two words
+
+"*y: copy to clipboard
+"*p: past from clipboard
+```
+## Text object
+```
+aw: a word
+daw: delete a word
+as: a sentence
+das: delete a sentence (with the white space after it)
+
+is: inner sentence
+dis: delete a sentence without white space after it.
+
+is and as can be used in viusal mode to select text.
+```
+## 
+~: change the char to lowercase or uper case.
+
 
 # split window
-
+```
 +++
 :split: split current window and display current file
 :split path/filename: split window and open new file
 +++
+```
 
 # Exit vim
 ```
@@ -121,14 +177,6 @@ u: undo
 CTRL + r: redo
 ```
 
-#Copy and paste
-```
-v: enter visual mode
-y: copy
-p: paste
-yy: copy the whole line
-dd: cut the whole line
-```
 
 # Find
 ```
@@ -155,7 +203,7 @@ moving with marks......
 ```
 
 
-#configuration
+# configuration
 ```
 set nobackup
 set noswapfile
@@ -177,3 +225,6 @@ let g:instant_markdown_slow = 1
 let g:instant_markdown_autostart = 0
 '#': InstantMarkdownPreview
 ```
+
+# Learning tags
+2017.10.22: usr_04.txt making small changes
