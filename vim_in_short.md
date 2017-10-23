@@ -126,12 +126,27 @@ y2w: copy two words
 ```
 ## Text object
 ```
+text object:
+aw: a word
+as
+ap
+ab: block betwween ()
+a'
+a"
+a[
+a{
+a
+
+
+usage:
 aw: a word
 daw: delete a word
 as: a sentence
-das: delete a sentence (with the white space after it)
+das: delete a sentence 
+a word is refer to the word and the whitespace after it.
 
-is: inner sentence
+is: inner sentence ,same as as(a sentence) exception the whitespace after it.
+
 dis: delete a sentence without white space after it.
 
 is and as can be used in viusal mode to select text.
