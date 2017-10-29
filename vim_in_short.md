@@ -60,6 +60,9 @@ Tn: backward version of tx
 3G: go to line 3
 %20: go to the line of 20% position of the file
 CTRL+G: the bottom line will show where you are and other info of the file
+
+Ctrl+o: Last cursor place
+Ctrl+i: Next cursor place
 ```
 # making chages
 ## operator + motion
