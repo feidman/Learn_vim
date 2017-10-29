@@ -164,10 +164,24 @@ is and as can be used in viusal mode to select text.
 
 # split window
 ```
-+++
 :split: split current window and display current file
 :split path/filename: split window and open new file
-+++
+:close/quit: close the current window
+:only: close all other windows
+:new: split window and open a new file
+
+:Ctrl + w (#)+: to increase the size of a window(# lines)(CTRL W and Shift +/=)
+:Ctrl + w (#)-: to decrease the size of a window(# lines)
+:{heigth}CTRL+w _: to set the window height to a specified number of liens
+
+:vsplit: do the same as split on in vertical direction
+
+:Ctrl+w (hjkl,tb): move to (left/below/above/right,top/bottom)
+:Ctrl+w (HJKL): move window to the far left/bottom/top/far right
+:cmdall: exex a cmd for all windows.:qall will quit all window
+
+:tab split: open new window in a tab windw
+:gt: go to next tab window
 ```
 
 # Exit vim
@@ -252,3 +266,4 @@ let g:instant_markdown_autostart = 0
 
 # Learning tags
 2017.10.22: usr_04.txt making small changes
+2017.10.29: usr_08.txt split window
