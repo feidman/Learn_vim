@@ -60,6 +60,9 @@ Tn: backward version of tx
 3G: go to line 3
 %20: go to the line of 20% position of the file
 CTRL+G: the bottom line will show where you are and other info of the file
+
+Ctrl+o: Last cursor place
+Ctrl+i: Next cursor place
 ```
 # making chages
 ## operator + motion
@@ -87,7 +90,13 @@ shortcuts for most popular "operator + motion"
 ## repeat change
 ```
 . :will repeat last change you've made
+<<<<<<< HEAD
 {   <B>:	    df>: delete untial > was found
+=======
+
+Examples:
+   <B>:	    df>: delete untial > was found
+>>>>>>> e7af71eb737c82ca7ee0ecd6f90250bf5653ab9b
 	    move to next <
 	    and . to repeat delete operation
    <B>
@@ -124,12 +133,27 @@ y2w: copy two words
 ```
 ## Text object
 ```
+text object:
+aw: a word
+as
+ap
+ab: block betwween ()
+a'
+a"
+a[
+a{
+a
+
+
+usage:
 aw: a word
 daw: delete a word
 as: a sentence
-das: delete a sentence (with the white space after it)
+das: delete a sentence 
+a word is refer to the word and the whitespace after it.
 
-is: inner sentence
+is: inner sentence ,same as as(a sentence) exception the whitespace after it.
+
 dis: delete a sentence without white space after it.
 
 is and as can be used in viusal mode to select text.
