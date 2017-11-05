@@ -158,30 +158,41 @@ dis: delete a sentence without white space after it.
 
 is and as can be used in viusal mode to select text.
 ```
-## 
+## Switch case
+```
 ~: change the char to lowercase or uper case.
-
+```
 
 # split window
+## split window
 ```
 :split: split current window and display current file
-:split path/filename: split window and open new file
-:close/quit: close the current window
-:only: close all other windows
-:new: split window and open a new file
-
-:Ctrl + w (#)+: to increase the size of a window(# lines)(CTRL W and Shift +/=)
-:Ctrl + w (#)-: to decrease the size of a window(# lines)
-:{heigth}CTRL+w _: to set the window height to a specified number of liens
-
 :vsplit: do the same as split on in vertical direction
-
-:Ctrl+w (hjkl,tb): move to (left/below/above/right,top/bottom)
-:Ctrl+w (HJKL): move window to the far left/bottom/top/far right
-:cmdall: exex a cmd for all windows.:qall will quit all window
-
+:split path/filename: split window and open new file
+:new: split window and open a new file
 :tab split: open new window in a tab windw
 :gt: go to next tab window
+```
+## close window
+```
+:only: close all other windows
+:close/quit: close the current window
+```
+## Resize window
+```
+:Ctrl w (#)+: to increase the size of a window(# lines)(CTRL W and Shift +/=)
+:Ctrl w (#)-: to decrease the size of a window(# lines)
+:{heigth}CTRL+w _: to set the window height to a specified number of liens
+```
+
+## Jump between windows
+```
+:Ctrl+w (hjkl,tb): move to (left/below/above/right,top/bottom)
+:Ctrl+w (HJKL): move window to the far left/bottom/top/far right
+```
+## Command for all windos
+```
+:cmdall: exec a cmd for all windows.:qall will quit all window
 ```
 
 # Exit vim
@@ -241,11 +252,44 @@ moving with marks......
 ```
 
 
+# Go away and come back
+Ctrl + Z: go to shell
+fg: come back to vim
+
+:marks: show the marks of exit vim
+\`mark_#: go back to the exact place.
+
+# Inserting quickly(Insert mode)
+## Making Correction
+```
+CTRL-w: delete the word before cursor
+CTRL-u: delete to the beginning of this line.
+
+Shift-Left: move cursor to left one word
+Shift-Right:
+PageDown
+PageUp
+Home
+ENd
+```
+## Showing matches
+```
+:set showmatch: when you now type a text like"(example)", as soon as you type the ) Vim will briefly move the cursor to the matching(, keep it there for a half a second and move back to thwere you were typing. This also good for []{}
+```
+## Completion
+```
+Ctrl-p: is previous match
+Ctrl-p: is nextious match
+```
+## Repeat insert
+```
+Ctrl-a: repeat the inserted text last time and enter Insert mode
+Ctrl-@: do the same as Ctrl-a but exit to command mode
+```
 # configuration
 ```
 set nobackup
 set noswapfile
-
 set encoding=utf-8
 
 set ruler: show cursor coordingates
@@ -264,6 +308,11 @@ let g:instant_markdown_autostart = 0
 '#': InstantMarkdownPreview
 ```
 
+
+
 # Learning tags
 2017.10.22: usr_04.txt making small changes
 2017.10.29: usr_08.txt split window
+2017.11.1:  usr_21.txt go away and come back
+2017.11.2:  usr_24.txt Inserting quickly
+
